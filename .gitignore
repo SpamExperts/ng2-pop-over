@@ -1,8 +1,0 @@
-node_modules/
-.idea/
-*.sw*
-.tmp/
-dist/
-build
-src/**/*.ngsummary.*
-src/**/*.ngfactory.*
