@@ -1,5 +1,5 @@
 import { OnInit, OnDestroy, ElementRef, Renderer, AfterViewInit } from '@angular/core';
-import { Observable, Subject } from 'rxjs/Rx';
+import { Observable, BehaviorSubject } from 'rxjs/Rx';
 export declare class PopOverComponent implements OnInit, OnDestroy, AfterViewInit {
     private elRef;
     private renderer;
@@ -17,7 +17,7 @@ export declare class PopOverComponent implements OnInit, OnDestroy, AfterViewIni
     yOffset: number;
     contentClass: string;
     content: any;
-    visible$: Subject<boolean>;
+    visible$: BehaviorSubject<boolean>;
     constructor(elRef: ElementRef, renderer: Renderer);
     ngOnInit(): void;
     ngOnDestroy(): void;

@@ -137,7 +137,7 @@ var PopOverComponent = /** @class */ (function () {
         { type: _angular_core.Component, args: [{
                     selector: 'pop-over',
                     styles: [
-                        ".pop-over-content {\n            position: absolute;\n            transition: opacity 0.2s ease-in-out;\n            background: #FFFFFF;\n        }"
+                        ".pop-over-content {\n            position: absolute;\n            transition: opacity 0.2s ease-in-out;\n            background: #FFFFFF;\n            z-index: 1060;\n        }"
                     ],
                     template: "<div class=\"pop-over\">\n        <div #popOverContent class=\"pop-over-content\" [ngClass]=\"contentClass\"\n             [class.shown]=\"visible$ | async\">\n            <ng-content *ngIf=\"visible$ | async\"></ng-content>\n        </div>\n    </div>"
                 },] },
